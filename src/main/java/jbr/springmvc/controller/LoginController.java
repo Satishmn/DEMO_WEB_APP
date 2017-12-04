@@ -51,4 +51,11 @@ public class LoginController {
 		return mav;
 	}
 	
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	public ModelAndView showHome(HttpServletRequest request, HttpServletResponse response) {
+		ModelAndView mav = new ModelAndView("welcome");
+		mav.addObject("firstname", "Test Username");
+		return mav;
+	}
+	
 }
