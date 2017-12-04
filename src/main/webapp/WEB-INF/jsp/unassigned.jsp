@@ -25,7 +25,7 @@
 			</div>
 			<div class="navbar-collapse collapse" id="navbar">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="/home">Home</a></li>
+					<li class="active"><a href="<c:url value='/home'/>">Home</a></li>
 					<li><a href="<c:url value='/unassigned'/>">Unassigned
 							Cases</a></li>
 					<li><a href="/my-cases">MyCases</a></li>
