@@ -1,0 +1,42 @@
+<app-navbar></app-navbar>
+<div class="panel">
+  <div class="body-header jumbotron">
+    <h1> Case details:</h1>
+  </div>
+  <div class="row body">
+    <div class="col-md-12 content">
+      <ul *ngFor="let data of casesData">
+        <h1 class="header panel-heading">Drug details:</h1>
+        <div class="panel-body well">
+          <div class="col-md-6 left-menu">
+            <li><p class="panel-sub-heading app-label">Case Number: <h5 class="app-label">{{data.drugName}}</h5></li>
+            <li><p class="panel-sub-heading app-label">Case Number: <h5 class="app-label">{{ data.caseNo }}</h5></li>
+            <li><p class="panel-sub-heading app-label">Category: <h5 class="app-label">{{data.category}}</h5></li>
+            <li><p class="panel-sub-heading app-label">Submitted By: <h5 class="app-label">{{data.submittedBy}}</h5></li>
+          </div>
+          <div class="col-md-6 right-menu">
+            <li><p class="panel-sub-heading app-label">Date Received: <h5 class="app-label">{{data.dateReceived}}</h5></li>
+            <li><p class="panel-sub-heading app-label">Date Assigned: <h5 class="app-label">{{data.dateAssigned}}</h5></li>
+            <li><p class="panel-sub-heading app-label">Status: <h5 class="app-label">{{data.status}}</h5></li>
+          </div>
+        </div>
+        <div >
+          <h4 class="panel-heading">Description: </h4>
+          <p class="panel-body well well2">{{data.description}}</p>
+        </div>
+
+        <div >
+          <h4 class="panel-heading">Reviewer comments:</h4>
+          <p class="panel-body well">Drug was submitted on {{casesData.dateReceived }} and ready of the further process.</p>
+        </div>
+        <div >
+          <h4 class="panel-heading">Documents submitted:</h4>
+          <ul class="panel-body well">
+            <li><a>index.pptx</a></li>
+            <li><a>cost.ts</a></li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>

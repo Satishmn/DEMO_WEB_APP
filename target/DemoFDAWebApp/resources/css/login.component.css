@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: #0c0877;
+  background: #83a4d4;
+  background: linear-gradient(to right, #ddf4ff, #ffffff);
+}
+
+.form-signin{
+  width: 30%;
+  margin: 100px auto;
+}
+
+.form-label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.navbar{
+  height: 107px;
+  background: #1c92d2;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.navbar-default .navbar-brand {
+  color:#337EB8;
+  /* margin: 20px auto; */
+  font-size: 30px;
+  padding: 43px;
+}
+
+.nav.navbar-nav.navbar-right{
+  font-size: 30px;
+  padding: 35px;
+}
+
+
+a{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+a:hover{
+  opacity: 1;
+}
+
+/* .navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+} */
+

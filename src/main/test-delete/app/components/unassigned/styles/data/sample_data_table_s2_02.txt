@@ -1,0 +1,16 @@
+{
+  "data": [
+    {
+      "Employee": "<div class=\"badge-circle badge-primary fleft\"><span class=\"initials\">DJ</span></div><span>David Jebo</span>",
+      "Assigned_Waivers": "4"
+    },
+    {
+      "Employee": "<div class=\"badge-circle badge-primary fleft\"><span class=\"initials\">JA</span></div><span>Jen Ashford</span>",
+      "Assigned_Waivers": "3"
+    },
+    {
+      "Employee": "<div class=\"badge-circle badge-primary fleft\"><span class=\"initials\">RN</span></div><span>Raj Neervana</span>",
+      "Assigned_Waivers": "6"
+    }
+  ]
+}

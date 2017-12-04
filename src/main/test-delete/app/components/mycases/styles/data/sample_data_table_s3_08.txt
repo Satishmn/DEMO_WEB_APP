@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/11/16",
+      "Due_Date": "<p class=\"indicator indicator-danger\" title=\"Due Date Color Indicator set to Red\"></p> 12/02/16 (2)"
+    },
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/11/16",
+      "Due_Date": "<p class=\"indicator indicator-warning\"></p> 12/02/16 (3)"
+    },
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/11/16",
+      "Due_Date": "<p class=\"indicator indicator-warning\"></p> 12/02/16 (3)"
+    },
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/18/16",
+      "Due_Date": "<p class=\"indicator indicator-success\"></p> 12/09/16 (7)"
+    },
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/18/16",
+      "Due_Date": "<p class=\"indicator indicator-success\"></p> 12/09/16 (7)"
+    },
+    {
+      "Title": "<a href=\"#\">Face to Face</a>",
+      "State": "VA",
+      "Region": "MARO",
+      "Type": "Initial",
+      "Assignment_Date": "11/18/16",
+      "Due_Date": "<p class=\"indicator indicator-success\"></p> 12/09/16 (7)"
+    },
+     {
+       "Title": "<a href=\"#\">Face to Face</a>",
+       "State": "VA",
+       "Region": "MARO",
+       "Type": "Initial",
+       "Assignment_Date": "11/25/16",
+       "Due_Date": "<p class=\"indicator indicator-success\"></p> 12/16/16 (10)"
+     },
+     {
+       "Title": "<a href=\"#\">Face to Face</a>",
+       "State": "VA",
+       "Region": "MARO",
+       "Type": "Initial",
+       "Assignment_Date": "11/25/16",
+       "Due_Date": "<p class=\"indicator indicator-success\"></p> 12/16/16 (10)"
+     }
+  ]
+}
