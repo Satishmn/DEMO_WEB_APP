@@ -68,4 +68,15 @@ public class LoginController {
 		
 		return mav;
 	}
+	
+	
+	@RequestMapping(value = "/caseDetails", method = RequestMethod.GET)
+	public ModelAndView showcaseDetails(HttpServletRequest request, HttpServletResponse response, String caseID) {
+		
+		ModelAndView mav = null;
+		mav = new ModelAndView("caseDetails");
+		mav.addObject("caseDetails", userService.getCaseDetails(caseID));
+		
+		return mav;
+	}
 }

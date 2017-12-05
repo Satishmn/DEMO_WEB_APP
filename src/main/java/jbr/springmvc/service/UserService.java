@@ -2,6 +2,7 @@ package jbr.springmvc.service;
 
 import java.util.List;
 
+import jbr.springmvc.model.CaseDetails;
 import jbr.springmvc.model.Login;
 import jbr.springmvc.model.UnAssignedCases;
 import jbr.springmvc.model.User;
@@ -15,4 +16,6 @@ public interface UserService {
   List<UnAssignedCases> getUnAssignedCases();
   
   List<UnAssignedCases> getAssignedCases();
+  
+  CaseDetails getCaseDetails(String caseID);
 }

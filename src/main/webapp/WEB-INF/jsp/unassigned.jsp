@@ -66,8 +66,8 @@
 									<tbody>
 										<c:forEach items="${unAssignedCasesList}" var="unAssignedCase">
 											<tr>
-												<td><c:url value="editProduct" var="uaCaseURL">
-														<c:param name="case_id" value="${unAssignedCase.case_id}" />
+												<td><c:url value="caseDetails" var="uaCaseURL">
+														<c:param name="caseID" value="${unAssignedCase.case_id}" />
 													</c:url> <a href="${uaCaseURL}"><c:out
 															value="${unAssignedCase.case_id}" /></a></td>
 												<td>${unAssignedCase.drug_name}</td>
