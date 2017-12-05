@@ -34,7 +34,7 @@
 					<li class="active"><a href="<c:url value='/home'/>">Home</a></li>
 					<li><a href="<c:url value='/unassigned'/>">Unassigned
 							Cases</a></li>
-					<li><a href="/my-cases">MyCases</a></li>
+					<li><a href="<c:url value='/myCases'/>">MyCases</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="/home/user"> User<span

@@ -13,4 +13,6 @@ public interface UserService {
   User validateUser(Login login);
   
   List<UnAssignedCases> getUnAssignedCases();
+  
+  List<UnAssignedCases> getAssignedCases();
 }

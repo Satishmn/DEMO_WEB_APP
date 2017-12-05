@@ -8,7 +8,12 @@ import jbr.springmvc.model.UnAssignedCases;
 import jbr.springmvc.model.User;
 
 public interface UserDao {
+	
 	void register(User user);
+	
 	User validateUser(Login login);
+	
 	List<UnAssignedCases> getUnAssignedCases(); 
+	
+	List<UnAssignedCases> getAssignedCases(); 
 }

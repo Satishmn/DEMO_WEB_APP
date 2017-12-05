@@ -26,5 +26,7 @@ public class UserServiceImpl implements UserService {
 		return userDao.getUnAssignedCases();
 	}
 
-
+	public List<UnAssignedCases> getAssignedCases() {
+		return userDao.getAssignedCases();
+	}
 }

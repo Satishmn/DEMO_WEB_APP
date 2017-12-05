@@ -41,7 +41,7 @@
 
 		<div class="wrapper">
 			<div class="jumbotron" style="background: #1F2E46; color: #c9c9c9;">
-				<h1 class="header">Unassigned Cases</h1>
+				<h1 class="header">My Cases</h1>
 			</div>
 			<div>
 			<div class="row">
@@ -49,7 +49,7 @@
 						<div class="container">
 						<h3 class="table-header"
 							style="margin-bottom: 20px; padding: 0; font-weight: 400">List
-							of unassigned cases</h3>
+							of Assigned cases</h3>
 							<div class="table-responsive">
 								<table class="table spacing-table" data-toggle="table">
 									<thead>
@@ -64,20 +64,20 @@
 										</tr>
 									</thead>
 									<tbody>
-										<c:forEach items="${unAssignedCasesList}" var="unAssignedCase">
+										<c:forEach items="${assignedCasesList}" var="assignedCase">
 											<tr>
 												<td><c:url value="editProduct" var="uaCaseURL">
-														<c:param name="case_id" value="${unAssignedCase.case_id}" />
-													</c:url> <a href="${uaCaseURL}"><c:out
-															value="${unAssignedCase.case_id}" /></a></td>
-												<td>${unAssignedCase.drug_name}</td>
-												<td>${unAssignedCase.drug_desc}</td>
-												<td>${unAssignedCase.category}</td>
-												<td>${unAssignedCase.submitter}</td>
-												<td>${unAssignedCase.r_date}</td>
-												<td>${unAssignedCase.channel}</td>
+														<c:param name="case_id" value="${assignedCase.case_id}" />
+													</c:url> <a href="${caseURL}"><c:out
+															value="${assignedCase.case_id}" /></a></td>
+												<td>${assignedCase.drug_name}</td>
+												<td>${assignedCase.drug_desc}</td>
+												<td>${assignedCase.category}</td>
+												<td>${assignedCase.submitter}</td>
+												<td>${assignedCase.r_date}</td>
+												<td>${assignedCase.channel}</td>
 												<td><a
-													href="deleteProduct?code=${unAssignedCase.case_id}"> <img
+													href="deleteProduct?code=${assignedCase.case_id}"> <img
 														src="<c:url value='/resources/images/personIcon.png'/>"
 														height="25" width="25" />
 												</a></td>

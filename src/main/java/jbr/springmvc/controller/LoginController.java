@@ -58,4 +58,14 @@ public class LoginController {
 		return mav;
 	}
 	
+	
+	@RequestMapping(value = "/myCases", method = RequestMethod.GET)
+	public ModelAndView showAssigned(HttpServletRequest request, HttpServletResponse response) {
+		
+		ModelAndView mav = null;
+		mav = new ModelAndView("myCases");
+		mav.addObject("assignedCasesList", userService.getAssignedCases());
+		
+		return mav;
+	}
 }

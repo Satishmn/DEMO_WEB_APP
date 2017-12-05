@@ -1,5 +1,6 @@
 jbr/springmvc/controller/LoginController.class
 jbr/springmvc/dao/UserMapper.class
+jbr/springmvc/dao/AssignedCasesMapper.class
 jbr/springmvc/controller/RegistrationController.class
 jbr/springmvc/model/Login.class
 jbr/springmvc/model/UnAssignedCases.class
