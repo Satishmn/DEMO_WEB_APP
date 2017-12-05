@@ -78,7 +78,7 @@
       <div class="row">
         <div class="col-lg-6 middle">
           <div class="circle ">
-            <a id="unassigned" name="unassigned"><p>Unassigned Cases</p></a>
+            <a href="<c:url value='/unassigned'/>"><p>Unassigned Cases</p></a>
           </div>
           <div class="content">
             <p class="middle">Acesss Drug review cases here, that are submitted, but not yet assigned </p>
@@ -87,7 +87,7 @@
 
         <div class="col-lg-6 middle">
           <div class="circle circle-sm" >
-            <a routerLink="/my-cases"><p>My Cases</p></a>
+            <a href="<c:url value='/myCases'/>"><p>My Cases</p></a>
           </div>
           <div class="content">
             <p class="middle">Cases assigned to you.</p>
