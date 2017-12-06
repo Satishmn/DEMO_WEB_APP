@@ -60,7 +60,8 @@
 											<th>Category</th>
 											<th>Submitted By</th>
 											<th>Date Received</th>
-											<th>Channel</th>
+											<th>Date Assigned</th>
+											<th>Status</th>
 										</tr>
 									</thead>
 									<tbody>
@@ -75,12 +76,8 @@
 												<td>${assignedCase.category}</td>
 												<td>${assignedCase.submitter}</td>
 												<td>${assignedCase.r_date}</td>
-												<td>${assignedCase.channel}</td>
-												<td><a
-													href="deleteProduct?code=${assignedCase.case_id}"> <img
-														src="<c:url value='/resources/images/personIcon.png'/>"
-														height="25" width="25" />
-												</a></td>
+												<td>${assignedCase.a_date}</td>
+												<td>${assignedCase.status}</td>												
 											</tr>
 										</c:forEach>
 									</tbody>
