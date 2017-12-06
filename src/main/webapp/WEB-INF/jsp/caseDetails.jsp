@@ -15,8 +15,8 @@
 	href="<c:url value='/resources/css/bootstrap.min.css' />" />
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/resources/css/casedetails.component.css' />" />
-	
 </head>
+
 <body style="background: #F2F2F2;">
 <div class="navbar navbar-default" style="margin-bottom: 0">
 		<div class="container-fluid">
@@ -34,7 +34,7 @@
 					<li><a href="<c:url value='/myCases'/>">MyCases</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="/home/user"> User<span
+					<li class="active"><a > User<span
 							class="sr-only">(current)</span>
 					</a></li>
 				</ul>
@@ -44,12 +44,12 @@
 	
 <div class="panel">
   <div class="body-header jumbotron">
-    <h1> Case details:</h1>
+    <h1> Case Details</h1>
   </div>
   <div class="row body">
     <div class="col-md-12 content">
       <ul>
-        <h1 class="header panel-heading">Drug details:</h1>
+        <h1 class="header panel-heading">Drug details</h1>
         <div class="panel-body well">
           <div class="col-md-6 left-menu">
             <li><p class="panel-sub-heading app-label">Case Number <span>:</span> <h5 class="label-data">${caseDetails.case_id}</h5></li>
@@ -63,16 +63,16 @@
           </div>
         </div>
         <div >
-          <h4 class="panel-heading">Description: </h4>
+          <h4 class="panel-heading">Description </h4>
           <p class="panel-body well well2">${caseDetails.detailed_desc}</p>
         </div>
 
         <div >
-          <h4 class="panel-heading">Reviewer comments:</h4>
+          <h4 class="panel-heading">Reviewer comments</h4>
           <p class="panel-body well">Drug was submitted on ${caseDetails.r_date } and ready of the further process.</p>
         </div>
         <div >
-          <h4 class="panel-heading">Documents submitted:</h4>
+          <h4 class="panel-heading">Documents submitted</h4>
           <ul class="panel-body well">
             <li><a>index.pptx</a></li>
             <li><a>cost.ts</a></li>

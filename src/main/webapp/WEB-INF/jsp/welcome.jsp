@@ -37,7 +37,7 @@
 					<li><a href="<c:url value='/myCases'/>">MyCases</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="/home/user"> User<span
+					<li class="active"><a > User<span
 							class="sr-only">(current)</span>
 					</a></li>
 				</ul>
