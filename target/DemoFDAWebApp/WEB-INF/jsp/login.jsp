@@ -44,9 +44,11 @@
 				<h2 class="form-signin-heading" align="center"> Welcome, Please Login  </h2>
 				<hr>
 				<form:label cssClass="form-label" path="username">Username</form:label>
-					<input type="text" placeholder="Username" class="form-control" name="Username" /><br>
+					<input type="text" placeholder="username" class="form-control" name="username" />
+					<form:errors path="username" cssStyle="color: #ff0000;" /><br>
 					<form:label cssClass="form-label" path="password">Password</form:label>
-					<input type="password" class="form-control" name="Password" placeholder="Password"/><br>
+					<input type="password" class="form-control" name="password" placeholder="password"/>
+					<form:errors path="password" cssStyle="color: #ff0000;" /><br>
 					<a name="login" id ="login"><form:button class="btn btn-lg btn-primary btn-block" >Login</form:button></a>
 			</form:form>
 		</div>

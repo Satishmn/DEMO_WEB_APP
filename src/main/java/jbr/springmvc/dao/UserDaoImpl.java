@@ -28,7 +28,7 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	public User validateUser(Login login) {
-		String sql = "select * from CASE_PEOPLE where username='" + login.getUsername() + "' and password='" + login.getPassword()
+		String sql = "select PERSON_ID, NAME, ADDRESS, PHONE_NUMBER, EMAIL, USERNAME, PASSWORD from CASE_PEOPLE where USERNAME='" + login.getUsername() + "' and PASSWORD='" + login.getPassword()
 		+ "'";
 		List<User> users = jdbcTemplate.query(sql, new UserMapper());
 		return users.size() > 0 ? users.get(0) : null;
@@ -123,7 +123,7 @@ class UserMapper implements RowMapper<User> {
 	public User mapRow(ResultSet rs, int arg1) throws SQLException {
 		User user = new User();
 		user.setUsername(rs.getString("PERSON_ID"));
-		user.setPassword(rs.getString("DESIGNATION_ID"));
+	//	user.setPassword(rs.getString("DESIGNATION_ID"));
 		user.setName(rs.getString("NAME"));
 		user.setAddress(rs.getString("ADDRESS"));
 		user.setPhone(rs.getString("PHONE_NUMBER"));

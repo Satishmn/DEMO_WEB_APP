@@ -6,9 +6,16 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Login</title>
+<link rel="stylesheet" type="text/css"
+	href="<c:url value='/resources/css/jquery.dataTables.css' />" />
+<link rel="stylesheet" type="text/css"
+	href="<c:url value='/resources/css/table.css' />" />
+<link rel="stylesheet" type="text/css"
+	href="<c:url value='/resources/css/mycases.component.css' />" />
 <link rel="stylesheet" type="text/css"
 	href="<c:url value='/resources/css/navbar.component.css' />" />
 <link rel="stylesheet" type="text/css"
@@ -31,7 +38,7 @@
 					<li><a href="<c:url value='/myCases'/>">MyCases</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="/home/user"> User<span
+					<li class="active"><a > User<span
 							class="sr-only">(current)</span>
 					</a></li>
 				</ul>
@@ -66,8 +73,8 @@
 									<tbody>
 										<c:forEach items="${unAssignedCasesList}" var="unAssignedCase">
 											<tr>
-												<td><c:url value="editProduct" var="uaCaseURL">
-														<c:param name="case_id" value="${unAssignedCase.case_id}" />
+												<td><c:url value="caseDetails" var="uaCaseURL">
+														<c:param name="caseID" value="${unAssignedCase.case_id}" />
 													</c:url> <a href="${uaCaseURL}"><c:out
 															value="${unAssignedCase.case_id}" /></a></td>
 												<td>${unAssignedCase.drug_name}</td>

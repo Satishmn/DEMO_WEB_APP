@@ -1,4 +1,6 @@
 jbr/springmvc/controller/LoginController.class
+jbr/springmvc/dao/CaseDetailsMapper.class
+jbr/springmvc/service/UserValidator.class
 jbr/springmvc/dao/UserMapper.class
 jbr/springmvc/dao/AssignedCasesMapper.class
 jbr/springmvc/controller/RegistrationController.class
@@ -9,4 +11,5 @@ jbr/springmvc/service/UserServiceImpl.class
 jbr/springmvc/dao/UserDao.class
 jbr/springmvc/model/User.class
 jbr/springmvc/dao/UnAssignedCasesMapper.class
+jbr/springmvc/model/CaseDetails.class
 jbr/springmvc/service/UserService.class

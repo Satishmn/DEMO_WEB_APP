@@ -1,9 +1,9 @@
 package jbr.springmvc.model;
-//--PERSON_ID, --DESIGNATION_ID, --NAME, --ADDRESS, --PHONE_NUMBER, --EMAIL, --USERNAME, --PASSWORD,
+//--PERSON_ID,  --NAME, --ADDRESS, --PHONE_NUMBER, --EMAIL, --USERNAME, --PASSWORD,
 public class User {
 
   private String person_id;
-  private String designation_id;
+  //private String designation_id;
   private String username;
   private String password;
   private String name;
@@ -18,12 +18,7 @@ public class User {
 	public void setPerson_id(String person_id) {
 		this.person_id = person_id;
 	}
-	public String getDesignation_id() {
-		return designation_id;
-	}
-	public void setDesignation_id(String designation_id) {
-		this.designation_id = designation_id;
-	}
+
 	public String getUsername() {
 		return username;
 	}
@@ -60,7 +55,5 @@ public class User {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-  
-
 
 }

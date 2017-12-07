@@ -1,7 +1,9 @@
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/controller/RegistrationController.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/service/UserServiceImpl.java
+/Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/model/CaseDetails.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/dao/UserDao.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/model/Login.java
+/Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/service/UserValidator.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/controller/LoginController.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/model/UnAssignedCases.java
 /Users/sateeshmolleti/eclipse-workspace/AuroTech/DEMO_WEB_APP/src/main/java/jbr/springmvc/service/UserService.java

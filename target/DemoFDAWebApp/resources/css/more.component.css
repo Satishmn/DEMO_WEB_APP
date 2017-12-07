@@ -3,25 +3,34 @@ body{
 }
 
 .jumbotron{
-  height: 110px;
-  font-size: 20px;
+  height: 83px;
   padding: 10px;
-  margin-bottom: 10px;
-  /*background: #3689F7;*/
+  margin-bottom: 15px;
+  background:#222F44;
+  color: #fff;
 }
 
 .jumbotron h1{
-  font-size: 40px;
-  /*color: #fff;*/
+  font-size: 30px;
 }
 
-.content{
+.content-head{
   margin:0 auto;
-  width: 60%;
+  width: 70%;
 
 }
-.container{
-  /*margin-top: 100px;*/
+
+h1{
+  font-size: 25px;
+}
+
+li{
+  font-size: 16px;
+  list-style: none;
+}
+
+li a{
+  padding-left: 10px;
 }
 
 .panel{
@@ -29,7 +38,7 @@ body{
 }
 
 .body-header{
-  padding-left: 20px;
+  padding-left: 55px;
 }
 
 .left-menu{
@@ -50,20 +59,37 @@ body{
 }
 
 .panel-heading{
-  margin-bottom: 0;
-  background: #0f87ff;
+  margin: 0;
+  background: #254159;
   color: #fff;
 }
 
 
 .panel-sub-heading{
   font-weight: bold;
-  text-transform: uppercase;
   color: #1039cc;
   padding: 10px 20px;
 }
 
 
 .app-label{
-  display: inline;
+  display: inline-block;
+  width: 165px;
+  margin:0;
+}
+
+.label-data{
+  display: inline-block;
+}
+
+.content-body{
+  float: right;
+}
+
+@media only screen and (max-width: 500px) {
+
+  .row{
+    margin:0 auto;
+    min-width: 60%;
+  }
 }
