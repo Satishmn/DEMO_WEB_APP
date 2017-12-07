@@ -16,6 +16,11 @@
 		<mysql.connector.version>5.1.9</mysql.connector.version>
 	</properties>
 	<dependencies>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<version>2.0.0.Final</version>
+		</dependency>
 		<!-- Junit -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -67,19 +72,24 @@
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
-		
-				<!-- ojdbc8.jar example -->
-<!-- 		<dependency>
-			<groupId>com.oracle</groupId>
-			<artifactId>ojdbc8</artifactId>
-		</dependency> -->
-		
+
+
+		<!-- ojdbc8.jar example -->
+		<!-- <dependency> <groupId>com.oracle</groupId> <artifactId>ojdbc8</artifactId> 
+			</dependency> -->
+
 		<!-- MySQL database driver -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${mysql.connector.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.el</groupId>
+			<artifactId>javax.el-api</artifactId>
+			<version>2.2.4</version>
+		</dependency>
+		
 	</dependencies>
 	<build>
 		<finalName>DemoFDAWebApp</finalName>
