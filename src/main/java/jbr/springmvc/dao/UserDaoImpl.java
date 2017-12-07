@@ -22,13 +22,13 @@ public class UserDaoImpl implements UserDao {
 	JdbcTemplate jdbcTemplate;
 
 	public void register(User user) {
-		String sql = "insert into users values(?,?,?,?,?,?,?)";
-		jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword(), user.getFirstname(),
-				user.getLastname(), user.getEmail(), user.getAddress(), user.getPhone() });
+		String sql = "insert into CASE_PEOPLE values(?,?,?,?,?,?,?)";
+		jdbcTemplate.update(sql, new Object[] { user.getUsername(), user.getPassword(), user.getName(),
+				user.getName(), user.getEmail(), user.getAddress(), user.getPhone() });
 	}
 
 	public User validateUser(Login login) {
-		String sql = "select * from users where username='" + login.getUsername() + "' and password='" + login.getPassword()
+		String sql = "select * from CASE_PEOPLE where username='" + login.getUsername() + "' and password='" + login.getPassword()
 		+ "'";
 		List<User> users = jdbcTemplate.query(sql, new UserMapper());
 		return users.size() > 0 ? users.get(0) : null;
@@ -117,18 +117,21 @@ public class UserDaoImpl implements UserDao {
 		return caseDetails ;
 	}
 
-}
+} 
 
 class UserMapper implements RowMapper<User> {
 	public User mapRow(ResultSet rs, int arg1) throws SQLException {
 		User user = new User();
-		user.setUsername(rs.getString("username"));
-		user.setPassword(rs.getString("password"));
-		user.setFirstname(rs.getString("firstname"));
-		user.setLastname(rs.getString("lastname"));
-		user.setEmail(rs.getString("email"));
-		user.setAddress(rs.getString("address"));
-		user.setPhone(rs.getInt("phone"));
+		user.setUsername(rs.getString("PERSON_ID"));
+		user.setPassword(rs.getString("DESIGNATION_ID"));
+		user.setName(rs.getString("NAME"));
+		user.setAddress(rs.getString("ADDRESS"));
+		user.setPhone(rs.getString("PHONE_NUMBER"));
+		user.setEmail(rs.getString("EMAIL"));
+		user.setUsername(rs.getString("USERNAME"));
+		user.setPassword(rs.getString("PASSWORD"));
+	//	user.setLastname(rs.getString("lastname"));
+		
 		return user;
 	}
 }

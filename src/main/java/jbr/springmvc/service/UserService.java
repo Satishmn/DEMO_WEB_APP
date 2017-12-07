@@ -11,7 +11,7 @@ public interface UserService {
 
   void register(User user);
 
-  User validateUser(Login login);
+  User validateUser(Login login); //change this to getUser
   
   List<UnAssignedCases> getUnAssignedCases();
   
